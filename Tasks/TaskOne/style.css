@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --bgcolor: #f8c365;
+  --bgcolor2: #f8f8f8;
+  --p: #b0b0b1;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+/* Header */
+header {
+  background-color: var(--bgcolor);
+  padding: 15px 30px;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: white;
+}
+header .logo {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+}
+header .btn button {
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+header .btn button:hover {
+  background-color: white;
+  color: black;
+}
+/* Hero */
+.hero {
+  background-color: var(--bgcolor);
+  height: calc(100vh - 66px);
+  padding: 50px;
+  position: relative;
+}
+.hero .content {
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.hero h1 {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 30px;
+  line-height: 1.8;
+  letter-spacing: 6px;
+  margin-bottom: 50px;
+}
+.hero h1 span {
+  background-color: black;
+  padding: 10px;
+  color: var(--bgcolor);
+  border-radius: 23px;
+}
+
+.hero button {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 2px black solid;
+  color: black;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 400px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.hero  button:hover {
+  background-color: white;
+  border: 2px transparent solid;
+}
+
+/* state  */
+.state {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 70px;
+  background-color: var(--bgcolor2);
+}
+.state .element h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.state p {
+  color: var(--p);
+}
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  background-color: #fdf6e4;
+  padding: 50px;
+  text-align: center;
+}
+.about img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+.about > div {
+  width: 30%;
+  text-align: left;
+}
+.about > div h2 {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 30px;
+  line-height: 1.7;
+}
+.about > div span {
+  background-color: var(--bgcolor);
+  padding: 10px;
+  color: black;
+  border-radius: 23px;
+  font-weight: normal;
+  border: 2px solid black;
+}
+.about > div p {
+  line-height: 1.7;
+}
+/* Features */
+.features {
+  padding: 50px;
+  background-color: var(--bgcolor2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.features .explore {
+  width: 50%;
+  height: 300px;
+  background-color: black;
+  border-radius: 22px;
+  text-align: left;
+  color: white;
+  padding: 50px;
+}
+.features .explore h2 {
+  line-height: 1.8;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.features .explore h2 span {
+  color: var(--bgcolor);
+  font-style: italic;
+}
+.features button {
+  border: none;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: var(--bgcolor);
+}
+.features .certificate {
+  width: 25%;
+  height: 300px;
+  background-color: white;
+  padding: 22px;
+  margin-bottom: 20px;
+
+  border-radius: 22px;
+}
+.features .certificate h3 {
+  margin-bottom: 15px;
+}
+.features .certificate p {
+  line-height: 1.6;
+}
+.features img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+/* courses */
+.courses {
+  padding: 100px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.courses h2 span {
+  background-color: transparent;
+  color: var(--bgcolor);
+  border-radius: 24px;
+  border: 1px solid var(--bgcolor);
+  padding: 10px;
+  font-style: italic;
+}
+.courses .main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 40px;
+}
+.courses .element {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+.courses .element img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.courses .rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.courses h3 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.courses button {
+  border: 2px var(--bgcolor) solid;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.courses button:hover {
+  background-color: var(--bgcolor);
+  color: white;
+}
+/* acount  */
+.acount {
+  padding: 200px 50px;
+  background-color: var(--bgcolor2);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  gap: 70px;
+}
+.acount .text {
+  width: 45%;
+}
+.acount .text h2 {
+  margin-bottom: 15px;
+  line-height: 1.9;
+}
+.acount .text h2 span {
+  background-color: var(--bgcolor);
+  color: black;
+  border-radius: 24px;
+  border: 1px solid black;
+  padding: 10px;
+  font-style: italic;
+}
+.acount .text p {
+  color: var(--p);
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+.acount .text .check span {
+  display: block;
+  margin-bottom: 10px;
+}
+.acount figure {
+  width: 40%;
+}
+.acount img {
+  width: 100%;
+}
+/* apps */
+.apps {
+  background-color: #fdf6e4;
+  text-align: center;
+  padding: 150px 50px;
+  position: relative;
+}
+.apps .order {
+  background-color: var(--bgcolor);
+  border-radius: 39px;
+  width: 60%;
+  position: absolute;
+  top: -109px;
+  padding: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.apps .order > div h3 {
+  margin-bottom: 15px;
+}
+.apps .order > div p {
+  margin-bottom: 15px;
+}
+.apps .order figure {
+  width: 40%;
+}
+.apps .order img {
+  max-width: 150px;
+}
+.apps h2 {
+  margin-bottom: 15px;
+  line-height: 1.9;
+}
+.apps h2 span {
+  background-color: var(--bgcolor);
+  color: black;
+  border-radius: 24px;
+  border: 1px solid black;
+  padding: 10px;
+  font-style: italic;
+}
+.apps button {
+  border: 2px black solid;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.apps button:hover {
+  background-color: var(--bgcolor);
+  color: black;
+}
+.apps .btn {
+  padding-bottom: 200px;
+}
+/* footer */
+footer {
+  color: var(--p);
+  background-color: red;
+  position: absolute;
+  width: 80%;
+  display: flex;
+  bottom: 0;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
+footer .links {
+  display: flex;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 20px;
+}
+footer ul li a {
+  color: var(--p);
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer .info {
+  width: 40%;
+}
+footer .info h2 {
+  margin-bottom: 15px;
+}
+footer .info p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
